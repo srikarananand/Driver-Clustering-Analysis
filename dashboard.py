@@ -19,9 +19,6 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 from sklearn.preprocessing import StandardScaler
-import folium
-from folium.plugins import HeatMap
-from streamlit_folium import st_folium
 import numpy as np
 
 # --------------------------------------------------
