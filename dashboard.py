@@ -43,7 +43,7 @@ st.markdown(hide_menu, unsafe_allow_html=True)
 # --------------------------------------------------
 @st.cache_data
 def load_data():
-    df = pd.read_csv("fuzzywithgeo.csv")  # Replace with your actual file path
+    df = pd.read_csv("fuzzywithgeo.csv") 
     # Ensure lat/lng are float
     df["lat"] = df["lat"].astype(float)
     df["lng"] = df["lng"].astype(float)
@@ -51,7 +51,7 @@ def load_data():
 
 data = load_data()
 
-# CLUSTER META (from your analysis)
+# CLUSTER META
 FPC_SCORE = 0.9227
 SILHOUETTE = 0.276
 CALINSKI = 1387.4
@@ -385,7 +385,6 @@ with tabs[2]:
         )
         st.plotly_chart(fig_weekend, use_container_width=True)
 
-# --------------  🗺️  GEOGRAPHIC HEATMAP  ----------
 # --------------  📊  TEMPORAL & OPERATIONAL ANALYSIS  ----------
 with tabs[3]:
     st.header("Temporal & Operational Pattern Analysis")
