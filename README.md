@@ -40,5 +40,3 @@ This project demonstrates advanced unsupervised machine learning applied to tran
 - Supports **data-driven operational decisions**
 - Integrates with existing transportation management systems
 
-## 🔧 Local Development
-
